@@ -17,7 +17,7 @@ Criterios de aceptación
  -	El usuario debe ubicar lugares turísticos cercanos a su ubicación geográfica.	
 
 Heroku
-	http://dev20122.herokuapp.com/
+	http://dev20125.herokuapp.com/
 
 Lean Canvas	
   	https://docs.google.com/document/d/1QQ5RYt1UARrSHIfqy6ZHIIyXQpGBWdkUdQmTedPSp_Q/edit	
