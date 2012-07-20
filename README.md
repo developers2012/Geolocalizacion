@@ -1,4 +1,3 @@
-
 Geolocalización
 ===============
 
@@ -16,12 +15,15 @@ Como usuario	La aplicacion buscara en un radio de 5km (default) esos lugares. Se
 Criterios de aceptación		
  -	El usuario debe visualizar los recursos turísticos en su dispositivo móvil.	
  -	El usuario debe ubicar lugares turísticos cercanos a su ubicación geográfica.	
-		
+
+Heroku
+	http://developer2012.herokuapp.com/
+
 Lean Canvas	
-  https://docs.google.com/document/d/1QQ5RYt1UARrSHIfqy6ZHIIyXQpGBWdkUdQmTedPSp_Q/edit	
+  	https://docs.google.com/document/d/1QQ5RYt1UARrSHIfqy6ZHIIyXQpGBWdkUdQmTedPSp_Q/edit	
 		
 Mockups	
-  https://docs.google.com/document/d/1b28Ik1RqXMNBL0GQqQgyCfjiyoB5isf_5hLlyhZyd7k/edit	
+  	https://docs.google.com/document/d/1b28Ik1RqXMNBL0GQqQgyCfjiyoB5isf_5hLlyhZyd7k/edit	
 		
 Distribución de actividades		
 
