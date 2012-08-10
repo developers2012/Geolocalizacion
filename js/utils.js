@@ -16,9 +16,14 @@ function mostrarUbicacion(posicion){
     var km = isNaN($("#cobertura option:selected").val())?5000:$("#cobertura option:selected").val()*1000;
     $("#latitud").val(latitud);
     $("#longitud").val(longitud);            
-    var mapa = dibujarMapa("mapa",latitud,longitud);
+	  new GMaps({
+		div: '#mapa',
+		lat: latitud,
+		lng: longitud
+	});
+    /*var mapa = dibujarMapa("mapa",latitud,longitud);
     var mrkUbicacion = dibujarMarcador(mapa,latitud,longitud,"<img src='img/user.gif' width='16px' style='position:relative;top:-2px' /> <strong>Mi ubicación</strong>");
-    dibujarRadio(mapa, mrkUbicacion,km);
+    dibujarRadio(mapa, mrkUbicacion,km);*/
 }                     
 
 
