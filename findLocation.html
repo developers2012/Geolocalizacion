@@ -1,17 +1,15 @@
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>.: Recursos turísticos - Developers :.</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="css/findLocation.css" />        
-        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" language="javascript" src ="js/jquery.js"> </script>        
-        <script type="text/javascript" language="javascript" src ="js/bootstrap.js"> </script>        
-        <script type="text/javascript" language="javascript" src ="js/utils.js"> </script>
-        <script type="text/javascript" language="javascript" src="js/findLocation.js"> </script>
+        <link rel="stylesheet" type="text/css" href="css/findLocation.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&libraries=geometry"></script>        
+        <script type="text/javascript" src="js/gmaps.js"></script>        
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/findLocation.js"></script>        
     </head>
     <body>
         <input type="hidden" value="" id="latitud" name="latitud" />
@@ -26,7 +24,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <a href="#" class="brand"><img src="img/peru.png" alt="Fiestas Patrias" /> Developers &nbsp; </a>
-                    <div class="nav-collapse">                                        
+                    <div class="nav-collapse">                                                             
                         <form action="" class="navbar-search pull-left">          
                             <strong>Cobertura</strong>
                             <select id="cobertura" name="cobertura" class="span2">
@@ -36,16 +34,17 @@
                                 <option value="20">20</option>
                             </select>   
                         </form>
+                        <form method="post" id="geocoding_form" class="pull-left" style="position:relative;top:5px;">
+                            <div class="input search-query">
+                                <input type="text" id="address" name="address" placeholder="Dirección" class="span5" />
+                                <input type="submit" class="btn" value="Buscar" style="position:relative;top: -4px;" />
+                            </div>
+                        </form>
+                        
                         <ul class="nav pull-right">                                                        
                             <li class="dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Turismo <b class="caret"></b></a>
-                                <ul class="dropdown-menu"  id="lstLugares">
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 1</a></li>
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 2</a></li>
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 3</a></li>
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 4</a></li>
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 5</a></li>
-                                    <li><a href="#" latitude="1" longitud="2">Las vegonias 6</a></li>
+                                <ul class="dropdown-menu"  id="lstLugares">                                    
                                 </ul>
                             </li>
                         </ul>
