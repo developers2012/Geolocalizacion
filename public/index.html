@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>.: Recursos turísticos - Developers :.</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/findLocation.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&libraries=geometry"></script>
+        <script type="text/javascript" src="js/gmaps.js"></script>        
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/findLocation_view.js"></script>        
+        <script type="text/javascript" src="js/findLocation.js"></script>        
+    </head>
+    <body>
+        <input type="hidden" name="glat" id="glat" value="" />
+        <input type="hidden" name="glng" id="glng" value="" />
+        <div class="navbar" style="margin-bottom:0px">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="#" class="brand"><img src="img/peru.png" alt="Fiestas Patrias" /> Developers &nbsp; </a>
+                    <div class="nav-collapse">                                                             
+                        <form action="" class="navbar-search pull-left">          
+                            <strong>Cobertura</strong>
+                            <select id="cobertura" name="cobertura" class="span2">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>   
+                        </form>
+                        <form method="post" id="geocoding_form" class="pull-left" style="position:relative;top:5px;">
+                            <div class="input search-query">
+                                <input type="text" id="address" name="address" placeholder="Dirección" class="span5" />
+                                <input type="submit" class="btn" value="Buscar" style="position:relative;top: -4px;" />
+                            </div>
+                        </form>
+
+                        <a href="test_findLocation.html" style="color:white;position:relative;top:10px;left:20px;" target="_blank"><i class="icon-ok" style="background-color:white;"></i>&nbsp;Test</a>
+                        <ul class="nav pull-right">                                                        
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Turismo <b class="caret"></b></a>
+                                <ul class="dropdown-menu"  id="lstLugares">                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav-collapse -->
+                </div>
+            </div><!-- /navbar-inner -->
+        </div>        
+        <div id="mapa">
+            <img src='img/ajax-loader.gif'/> Cargando posici&oacute;n
+        </div>        
+    </body>
+</html>
