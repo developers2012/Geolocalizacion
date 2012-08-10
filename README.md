@@ -23,6 +23,14 @@ Criterios de aceptación
  -	El usuario debe visualizar los recursos turísticos de Lima en su dispositivo móvil.	
  -	El usuario debe ubicar lugares turísticos cercanos a su ubicación geográfica dentro de su alcance.	
 
+Integrantes
+===========================
+- Pablo David Mena Medrano
+- José Manuel Ponce Cerna
+ 
+Aplicación
+===========================
+
 Heroku			:	http://dev20125.herokuapp.com/
 
 Lean Canvas		:	https://docs.google.com/document/d/1QQ5RYt1UARrSHIfqy6ZHIIyXQpGBWdkUdQmTedPSp_Q/edit	
